@@ -9,12 +9,9 @@
     font-size: 1.8rem;
     font-weight: 500;
     line-height: 150%;
-    transition: background-color .3s ease;
+    transition: background-color .2s ease;
     &:hover {
         background-color: $purple-20;
-    }
-    @include responsivo('tablet') {
-        color: red;
     }
 }
 
@@ -26,6 +23,7 @@
     display: flex;
     @include flex-center;
     width: 100%;
+    max-width: 52.1rem;
     gap: 1.6rem;
     input {
         all: unset;
@@ -37,12 +35,28 @@
         &::placeholder {
             color: $gray-300;
         }
-    } 
+    }
+    @include responsivo('tablet') {
+        margin: 0 auto;
+        input {
+            text-align: left;
+        }
+    }
+    @include responsivo('mobile') {
+        justify-content: space-between;
+        input {
+            max-width: 15rem;
+        }
+        .btn-primary {
+            padding: 1.2rem 2rem;
+            font-size: 1.6rem;
+        }
+    }
 }
 
 .card-recurso {
     width: 100%;
-    max-width: 22.5rem;
+    max-width: 26.5rem;
     .icon {
         width: 4.8rem;
         height: 4.8rem;
@@ -67,6 +81,16 @@
             line-height: 150%;
         }
     }
+    @include responsivo('laptop') {
+        max-width: 100%;
+        .icon {
+            margin: 0 auto;
+            margin-bottom: 2rem;
+        }
+        .text {
+            text-align: center
+        }
+    }
 }
 
 .review {
@@ -86,5 +110,8 @@
                 font-weight: 400;
             }
         }
+    }
+    @include responsivo('tablet') {
+        justify-content: center;
     }
 }
