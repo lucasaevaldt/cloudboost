@@ -4,7 +4,7 @@ Projeto desenvolvido no curso **Codeboost** de Will Moreira, utilizando **HTML**
 
 ## Visualize o Projeto
 
-Você pode visualizar o projeto através deste link: [Visualizar o Projeto](#) *(https://lucasaevaldt.github.io/cloudboost/)*
+Você pode visualizar o projeto através deste link: [**Visualizar o Projeto**](https://lucasaevaldt.github.io/cloudboost/)
 
 ## Funcionalidades
 
